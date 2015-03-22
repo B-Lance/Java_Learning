@@ -18,6 +18,19 @@ public class ArrayLists{
 		names.add("Trollo");
 		names.add(1, "Jackie Chan");
 
+		// A simple check		
+		System.out.println("......................................................");
+		Integer a = new Integer(1);
+		Integer b = new Integer(3);
+
+		System.out.println(a+b); // it's summing up (4)
+		System.out.println(a-b); // It's substracted (-2)
+		System.out.println(a+b-a*b); // the expression is calculated (1)
+		System.out.println(a+b+"COIL"); // first two are added, (4COIL)
+		System.out.println("COIL "+a+b); // none of Integers are added (!) they're only sent to stdo (COIL13)
+		System.out.println("......................................................");
+		//EO Simple check
+
 		for(int i=0; i<names.size(); i++){
 			System.out.println(names.get(i));
 		}
@@ -28,10 +41,11 @@ public class ArrayLists{
 		} catch (IndexOutOfBoundsException e){
 			System.out.println("\nelement@index_2: There's no element at index 2!");
 		} finally {
+			System.out.println("Size of array: " + names.size()); // Check size of names ArrayList
 			System.out.println("\n\nSigning out...");
 		}
 		
-		System.out.println(names.size()); // Check size of names ArrayList
+		
 
 	}
 }
